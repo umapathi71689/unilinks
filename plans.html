@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Internet Plans — Unilink Broadband</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css?v=1.2" />
+</head>
+
+<body>
+
+  <!-- Page Loader -->
+  <div id="page-loader">
+    <img class="loader-logo" src="logo-light.png" alt="Logo" />
+    <div class="loader-bar">
+      <div class="loader-bar-fill"></div>
+    </div>
+  </div>
+
+  <!-- Scroll Progress -->
+  <div id="scroll-progress"></div>
+
+  <!-- Custom Cursor -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- Background Elements -->
+  <!-- Background Animation (SVG injected dynamically via app.js) -->
+  <div class="video-overlay"></div>
+  <div class="orb-container">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <nav id="main-nav">
+    <img class="nav-logo" src="logo-light.png" alt="Logo" onclick="window.location.href='index.html'" style="height: 35px;" />
+    <div class="nav-divider"></div>
+
+    <div class="nav-controls">
+      <button class="mobile-theme-btn" id="mobileThemeToggleBtn" aria-label="Toggle Theme">
+        <i class="fas fa-moon"></i>
+      </button>
+      <button class="menu-toggle" id="menuToggleBtn" aria-label="Toggle Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+    <div class="nav-links-wrapper" id="navLinksWrapper">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About Us</a>
+      <a href="plans.html" class="nav-link active">Internet Plans</a>
+      <a href="offers.html" class="nav-link">Offers and Deals</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="contact.html" class="nav-link">Contact Us</a>
+      <a href="terms.html" class="nav-link">Terms & Conditions</a>
+      <a href="https://myaccount.daancommunications.com/customer_portal" target="_blank" class="nav-btn"
+        id="loginBtn"><i class="fas fa-key"></i> Login</a>
+    </div>
+  </nav>
+
+  <!-- Floating Social & Action Sidebar -->
+  <div class="social-floating-dock">
+    <button class="dock-item dock-theme" id="themeToggleBtn" aria-label="Toggle Theme"><i
+        class="fas fa-moon"></i></button>
+    <a href="https://wa.me/919787262228" target="_blank" class="dock-item dock-whatsapp"
+      aria-label="WhatsApp Enquiry" data-social="whatsapp"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://www.instagram.com" target="_blank" class="dock-item dock-instagram" aria-label="Instagram" data-social="instagram"><i
+        class="fab fa-instagram"></i></a>
+    <a href="https://www.facebook.com" target="_blank" class="dock-item dock-facebook" aria-label="Facebook" data-social="facebook"><i
+        class="fab fa-facebook-f"></i></a>
+    <button class="dock-item dock-download" aria-label="Download App"><i class="fas fa-download"></i></button>
+  </div>
+
+  <!-- INTERNET PLANS SECTION -->
+  <section id="plans" class="plans-section-container">
+    <div class="section-header">
+      <h2><i class="fas fa-tags"></i> Choose Your Link</h2>
+      <p class="section-subtitle-text">Transparent pricing. No hidden fees. Pure performance.</p>
+    </div>
+
+    <!-- Location Selection Toggle -->
+    <div class="coverage-selector-block">
+      <p class="coverage-instruction-text">Check if our high-speed fiber has reached your street (Tiruppur & Pollachi):
+      </p>
+      <div class="location-toggle-wrapper">
+        <div class="location-toggle-capsule">
+          <button class="location-btn active" id="locBtnTiruppur" onclick="selectLocation('Tiruppur')">Tiruppur</button>
+          <button class="location-btn" id="locBtnPollachi" onclick="selectLocation('Pollachi')">Pollachi</button>
+          <div class="location-slider"></div>
+        </div>
+        <div class="location-coverage-info" id="locationCoverageInfo">
+          <i class="fas fa-check-circle"></i> Unilink High-Speed Fiber is fully active in <strong>Tiruppur</strong>!
+        </div>
+      </div>
+    </div>
+
+    <!-- Speed Selection Buttons -->
+    <div class="speed-tabs" id="speedTabs">
+      <button class="speed-tab active-tab" id="speedTab40" onclick="filterBySpeed('40 Mbps')">40 Mbps</button>
+      <button class="speed-tab" id="speedTab100" onclick="filterBySpeed('100 Mbps')">100 Mbps</button>
+      <button class="speed-tab" id="speedTab200" onclick="filterBySpeed('200 Mbps')">200 Mbps</button>
+      <button class="speed-tab" id="speedTab500" onclick="filterBySpeed('500 Mbps')">500 Mbps</button>
+    </div>
+
+    <!-- Plans Grid Container -->
+    <div class="plans-grid-container">
+      <div class="plan-cards-grid" id="planCards"></div>
+    </div>
+
+    <!-- Plan Benefits summary -->
+    <div class="plans-difference-section">
+      <h3 class="difference-title">Why Unilink Packages are Different</h3>
+      <div class="difference-grid">
+        <div class="difference-card">
+          <div class="diff-icon"><i class="fas fa-exchange-alt"></i></div>
+          <h4>Symmetric Speeds</h4>
+          <p>Same speed for upload and download. Ideal for low-latency gaming, heavy cloud backups, and lag-free video
+            meetings.</p>
+        </div>
+        <div class="difference-card">
+          <div class="diff-icon"><i class="fas fa-infinity"></i></div>
+          <h4>No Hidden FUP</h4>
+          <p>True unlimited bandwidth. No drops in speeds, no hidden daily data caps, and no monthly throttling
+            thresholds.</p>
+        </div>
+        <div class="difference-card">
+          <div class="diff-icon"><i class="fas fa-gift"></i></div>
+          <h4>Free Installation</h4>
+          <p>Ask our team about ongoing promotions! Dual-band router setup and configuration are fully managed by our
+            experts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p class="copyright">© 2026 Unilink — A Daan Communications Enterprise</p>
+  </footer>
+
+  <!-- Enquiry Modal -->
+  <div id="enquiryModal" class="modal-overlay">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="closeModalBtn" aria-label="Close Dialog">&times;</button>
+      <div class="modal-header">
+        <h3>Plan Inquiry</h3>
+        <p id="modalPlanName">Starter Link Essential</p>
+      </div>
+      <form id="enquiryForm" onsubmit="submitEnquiryForm(event)">
+        <div class="form-group">
+          <label for="usrName">Full Name</label>
+          <input type="text" id="usrName" placeholder="Enter your full name" required />
+        </div>
+        <div class="form-group">
+          <label for="usrMobile">Mobile Number</label>
+          <input type="tel" id="usrMobile" placeholder="10-digit mobile number" pattern="[0-9]{10}" required />
+        </div>
+        <div class="form-group">
+          <label for="usrAddress">Address</label>
+          <textarea id="usrAddress" rows="3" placeholder="Enter your full installation address" required></textarea>
+        </div>
+        <button type="submit" class="btn-select">Send Enquiry on WhatsApp →</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="toastMsg" class="toast-msg"></div>
+
+  <script src="app.js?v=1.2" defer></script>
+</body>
+
+</html>

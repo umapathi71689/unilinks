@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Services — Unilink Broadband</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css?v=1.2" />
+</head>
+
+<body>
+
+  <!-- Page Loader -->
+  <div id="page-loader">
+    <img class="loader-logo" src="logo-light.png" alt="Logo" />
+    <div class="loader-bar">
+      <div class="loader-bar-fill"></div>
+    </div>
+  </div>
+
+  <!-- Scroll Progress -->
+  <div id="scroll-progress"></div>
+
+  <!-- Custom Cursor -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- Background Elements -->
+  <!-- Background Animation (SVG injected dynamically via app.js) -->
+  <div class="video-overlay"></div>
+  <div class="orb-container">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <nav id="main-nav">
+    <img class="nav-logo" src="logo-light.png" alt="Logo" onclick="window.location.href='index.html'" style="height: 35px;" />
+    <div class="nav-divider"></div>
+
+    <div class="nav-controls">
+      <button class="mobile-theme-btn" id="mobileThemeToggleBtn" aria-label="Toggle Theme">
+        <i class="fas fa-moon"></i>
+      </button>
+      <button class="menu-toggle" id="menuToggleBtn" aria-label="Toggle Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+    <div class="nav-links-wrapper" id="navLinksWrapper">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About Us</a>
+      <a href="plans.html" class="nav-link">Internet Plans</a>
+      <a href="offers.html" class="nav-link">Offers and Deals</a>
+      <a href="services.html" class="nav-link active">Services</a>
+      <a href="contact.html" class="nav-link">Contact Us</a>
+      <a href="terms.html" class="nav-link">Terms & Conditions</a>
+      <a href="https://myaccount.daancommunications.com/customer_portal" target="_blank" class="nav-btn"
+        id="loginBtn"><i class="fas fa-key"></i> Login</a>
+    </div>
+  </nav>
+
+  <!-- Floating Social & Action Sidebar -->
+  <div class="social-floating-dock">
+    <button class="dock-item dock-theme" id="themeToggleBtn" aria-label="Toggle Theme"><i
+        class="fas fa-moon"></i></button>
+    <a href="https://wa.me/919787262228" target="_blank" class="dock-item dock-whatsapp" aria-label="WhatsApp Enquiry"
+      data-social="whatsapp"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://www.instagram.com" target="_blank" class="dock-item dock-instagram" aria-label="Instagram"
+      data-social="instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.facebook.com" target="_blank" class="dock-item dock-facebook" aria-label="Facebook"
+      data-social="facebook"><i class="fab fa-facebook-f"></i></a>
+    <button class="dock-item dock-download" aria-label="Download App"><i class="fas fa-download"></i></button>
+  </div>
+
+  <!-- SERVICES SECTION -->
+  <section id="services" class="services-section-container">
+    <div class="section-header">
+      <h2><i class="fas fa-crown"></i> Connectivity Tailored to You</h2>
+      <p class="services-subtitle-text">From high-speed home entertainment to mission-critical business links.</p>
+    </div>
+
+    <div class="services-grid-detailed">
+      <!-- Card 1: Home Broadband -->
+      <div class="service-detailed-card animated">
+        <div class="service-card-header">
+          <div class="service-icon-large"><i class="fas fa-home"></i></div>
+          <h3>Home Broadband</h3>
+          <p class="service-description-text">Ultra-fast Fiber-to-the-Home (FTTH) designed for the modern household.
+            Whether you are streaming in 4K, attending online classes, or dominating in online gaming, our home plans
+            provide the stability you deserve.</p>
+        </div>
+        <ul class="feature-list">
+          <li><i class="fas fa-infinity"></i> <span><strong>Unlimited Data:</strong> No caps, no speed throttles.</span>
+          </li>
+          <li><i class="fas fa-tachometer-alt"></i> <span><strong>Low Latency:</strong> Optimized routing for lag-free
+              gaming.</span></li>
+          <li><i class="fas fa-wifi"></i> <span><strong>Wi-Fi 6 Ready:</strong> Future-proof dual-band ONT
+              hardware.</span></li>
+          <li><i class="fas fa-map-marked-alt"></i> <span><strong>Dual-City Support:</strong> Active in Tiruppur &
+              Pollachi.</span></li>
+        </ul>
+      </div>
+
+      <!-- Card 2: Corporate & Enterprise -->
+      <div class="service-detailed-card animated">
+        <div class="service-card-header">
+          <div class="service-icon-large"><i class="fas fa-building"></i></div>
+          <h3>Corporate & Enterprise</h3>
+          <p class="service-description-text">Scalable, high-bandwidth solutions for the industrial engines of Tiruppur
+            and Pollachi. We understand that for the textile industries and commercial sectors, downtime is a direct
+            business loss.</p>
+        </div>
+        <ul class="feature-list">
+          <li><i class="fas fa-exchange-alt"></i> <span><strong>Leased Lines:</strong> Symmetric bandwidth with 99.9%
+              uptime SLA.</span></li>
+          <li><i class="fas fa-server"></i> <span><strong>Static IP:</strong> Perfect for secure remote networks & CCTV
+              access.</span></li>
+          <li><i class="fas fa-network-wired"></i> <span><strong>Multi-Office mesh:</strong> Direct fiber loops
+              connecting branch offices.</span></li>
+          <li><i class="fas fa-star"></i> <span><strong>Priority Support:</strong> On-demand 24/7 technical
+              helpdesk.</span></li>
+        </ul>
+      </div>
+
+      <!-- Card 3: Smart Solutions -->
+      <div class="service-detailed-card animated">
+        <div class="service-card-header">
+          <div class="service-icon-large"><i class="fas fa-microchip"></i></div>
+          <h3>Smart Solutions</h3>
+          <p class="service-description-text">Enhance your digital link with modern value-added systems that bring more
+            entertainment options, security, and cloud scalability to your home or office operations.</p>
+        </div>
+        <ul class="feature-list">
+          <li><i class="fas fa-tv"></i> <span><strong>OTT Bundles:</strong> Direct access to 20+ top streaming
+              apps.</span></li>
+          <li><i class="fas fa-shield-alt"></i> <span><strong>Security First:</strong> Integrated firewall and secure
+              dns.</span></li>
+          <li><i class="fas fa-hdd"></i> <span><strong>Cloud Storage:</strong> Fast secure backups accessible
+              anywhere.</span></li>
+          <li><i class="fas fa-phone-alt"></i> <span><strong>VoIP Integration:</strong> Crystal-clear voice lines for
+              office systems.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Comparison Table section -->
+    <div class="services-comparison-container">
+      <h3 class="comparison-title-text"><i class="fas fa-balance-scale"></i> Service Tier Comparison</h3>
+      <p class="comparison-subtitle-text">Contrast home and enterprise connectivity to choose the perfect link for your
+        requirements.</p>
+      <div class="table-responsive">
+        <table class="services-comparison-table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Home Link</th>
+              <th>Business Leased Line</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Best For</strong></td>
+              <td>Streaming, gaming & smart home devices</td>
+              <td>Offices, server hosting & industrial textile grids</td>
+            </tr>
+            <tr>
+              <td><strong>Speed Range</strong></td>
+              <td>Up to 500 Mbps symmetrical FTTH</td>
+              <td>Custom multi-Gigabit dedicated scale</td>
+            </tr>
+            <tr>
+              <td><strong>Support SLA</strong></td>
+              <td>Standard local neighborhood support</td>
+              <td>Priority 24/7 dedicated enterprise response</td>
+            </tr>
+            <tr>
+              <td><strong>IP Address</strong></td>
+              <td>Dynamic IP assignment</td>
+              <td>Static IP configuration included</td>
+            </tr>
+            <tr>
+              <td><strong>Uptime Guarantee</strong></td>
+              <td>Best-effort high-availability lines</td>
+              <td>99.9% contractual uptime SLA</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p class="copyright">© 2026 Unilink — A Daan Communications Enterprise</p>
+  </footer>
+
+  <script src="app.js?v=1.2" defer></script>
+</body>
+
+</html>

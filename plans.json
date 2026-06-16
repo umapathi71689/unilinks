@@ -3,13 +3,21 @@
     "name": "Starter Link",
     "desc": "Social Media & Browsing",
     "benefits": "Unlimited Data + 24/7 Support",
+    "discounts": {
+      "monthly": 0,
+      "quarterly": 5,
+      "halfyearly": 10,
+      "yearly": 16.67
+    },
     "base": {
+      "locations": ["Tiruppur", "Pollachi"],
       "monthly": 399,
       "quarterly": 1197,
       "halfyearly": 2394,
       "yearly": 4788
     },
     "ott": {
+      "locations": ["Pollachi"],
       "monthly": 499,
       "quarterly": 1497,
       "halfyearly": 2994,
@@ -20,13 +28,21 @@
     "name": "Value Link",
     "desc": "Families & Students",
     "benefits": "Unlimited Data + HD Streaming",
+    "discounts": {
+      "monthly": 0,
+      "quarterly": 5,
+      "halfyearly": 10,
+      "yearly": 16.67
+    },
     "base": {
+      "locations": ["Tiruppur", "Pollachi"],
       "monthly": 599,
       "quarterly": 1797,
       "halfyearly": 3594,
       "yearly": 7188
     },
     "ott": {
+      "locations": ["Tiruppur", "Pollachi"],
       "monthly": 699,
       "quarterly": 2097,
       "halfyearly": 4194,
@@ -37,13 +53,21 @@
     "name": "Turbo Link",
     "desc": "Pro Gamers & Streamers",
     "benefits": "Unlimited Data + 4K Streaming",
+    "discounts": {
+      "monthly": 0,
+      "quarterly": 5,
+      "halfyearly": 10,
+      "yearly": 16.67
+    },
     "base": {
+      "locations": ["Tiruppur", "Pollachi"],
       "monthly": 899,
       "quarterly": 2697,
       "halfyearly": 5394,
       "yearly": 10788
     },
     "ott": {
+      "locations": ["Tiruppur"],
       "monthly": 999,
       "quarterly": 2997,
       "halfyearly": 5994,
@@ -54,13 +78,21 @@
     "name": "Giga Link",
     "desc": "Power Users & Large Homes",
     "benefits": "Priority Routing + Ultra-Low Latency",
+    "discounts": {
+      "monthly": 0,
+      "quarterly": 5,
+      "halfyearly": 10,
+      "yearly": 16.67
+    },
     "base": {
+      "locations": ["Tiruppur"],
       "monthly": 1399,
       "quarterly": 4197,
       "halfyearly": 8394,
       "yearly": 16788
     },
     "ott": {
+      "locations": ["Tiruppur"],
       "monthly": 1499,
       "quarterly": 4497,
       "halfyearly": 8994,
