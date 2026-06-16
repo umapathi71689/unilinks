@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Unilink — Premium Fiber Broadband | Cinematic Experience</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Page Loader -->
+<div id="page-loader">
+  <div class="loader-logo">⚡ UNILINK</div>
+  <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+</div>
+
+<!-- Scroll Progress -->
+<div id="scroll-progress"></div>
+
+<!-- Custom Cursor -->
+<div id="cursor-dot"></div>
+<div id="cursor-ring"></div>
+
+<!-- Background Elements -->
+<video class="bg-video" autoplay loop muted playsinline>
+  <source src="heroback.mp4" type="video/mp4">
+</video>
+<div class="video-overlay"></div>
+<div class="orb-container">
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+</div>
+
+<!-- Navigation -->
+<nav id="main-nav">
+  <img class="nav-logo" src="unilink teal bg.png" alt="Logo" />
+  <div class="nav-divider"></div>
+  
+  <div class="nav-controls">
+    <button class="mobile-theme-btn" id="mobileThemeToggleBtn" aria-label="Toggle Theme">
+      <i class="fas fa-moon"></i>
+    </button>
+    <button class="menu-toggle" id="menuToggleBtn" aria-label="Toggle Menu">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+  
+  <div class="nav-links-wrapper" id="navLinksWrapper">
+    <a class="nav-link active" data-section="home">Home</a>
+    <a class="nav-link" data-section="about">About Us</a>
+    <a class="nav-link" data-section="plans">Internet Plans</a>
+    <a class="nav-link" data-section="offers">Offers and Deals</a>
+    <a class="nav-link" data-section="services">Services</a>
+    <a class="nav-link" data-section="contact">Contact Us</a>
+    <a class="nav-link" data-section="terms">Terms & Conditions</a>
+    <a href="https://myaccount.daancommunications.com/customer_portal" target="_blank" class="nav-btn" id="loginBtn"><i class="fas fa-key"></i> Login</a>
+  </div>
+</nav>
+
+<!-- Floating Social & Action Sidebar -->
+<div class="social-floating-dock">
+  <button class="dock-item dock-theme" id="themeToggleBtn" aria-label="Toggle Theme"><i class="fas fa-moon"></i></button>
+  <a href="https://wa.me/919787262228" target="_blank" class="dock-item dock-whatsapp" aria-label="WhatsApp Enquiry"><i class="fab fa-whatsapp"></i></a>
+  <a href="https://www.instagram.com" target="_blank" class="dock-item dock-instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+  <a href="https://www.facebook.com" target="_blank" class="dock-item dock-facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+  <button class="dock-item dock-download" aria-label="Download App"><i class="fas fa-download"></i></button>
+</div>
+
+<!-- HOME SECTION -->
+<section id="home" class="hero-section">
+  <div class="hero-wrapper">
+    <div class="hero-grid">
+      <div class="hero-text-area">
+        <div class="hero-slides-container">
+          <div class="hero-slide active">
+            <div class="hero-badge"><i class="fas fa-bolt"></i> NEXT-GEN FIBER</div>
+            <h1>Unilink: Your Direct Connection to the Digital World.</h1>
+            <div class="hero-tagline">Fast. Reliable. Unstoppable.</div>
+            <div class="hero-description">We don’t just provide internet; we provide the link that powers your home and fuels your business. Formerly known as Daan Hypernet, Unilink is Tiruppur’s premier high-speed broadband provider, engineered for those who demand more from their connection.</div>
+            <div class="feature-grid-left">
+              <span class="feature-pill"><i class="fas fa-rocket"></i> Ultra-Fiber Speeds</span>
+              <span class="feature-pill"><i class="fas fa-headset"></i> Dedicated 24/7 Support</span>
+              <span class="feature-pill"><i class="fas fa-link"></i> Seamless Connectivity</span>
+            </div>
+          </div>
+          <div class="hero-slide">
+            <div class="hero-badge"><i class="fas fa-gamepad"></i> GAMER · WORK · STREAM</div>
+            <h1>Built for Every Digital Moment.</h1>
+            <div class="hero-tagline">From Streaming to Success.</div>
+            <div class="hero-description">Low latency, symmetric speeds, and high stability for remote work, multi-player gaming, and 4K streaming. Wi-Fi 6 ready hardware is fully compatible with our fiber lines.</div>
+            <div class="feature-grid-left">
+              <span class="feature-pill"><i class="fas fa-tachometer-alt"></i> Symmetric Upload/Download</span>
+              <span class="feature-pill"><i class="fas fa-map-marker-alt"></i> Tiruppur & Pollachi FTTH</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual-area">
+        <div class="image-slideshow-frame">
+          <div class="image-slide-track">
+            <img class="image-slide active-img" src="fl1.jpeg" alt="Fiber">
+            <img class="image-slide" src="fl2.jpeg" alt="Speed">
+          </div>
+          <div class="edge-gradient"></div>
+        </div>
+      </div>
+    </div>
+    <div class="unified-slider-controls">
+      <button class="unified-nav-btn" id="prevSlideBtn"><i class="fas fa-chevron-left"></i></button>
+      <div class="unified-dots" id="dotsContainer"></div>
+      <button class="unified-nav-btn" id="nextSlideBtn"><i class="fas fa-chevron-right"></i></button>
+    </div>
+  </div>
+</section>
+
+<!-- STATS STRIP -->
+<div class="stats-strip">
+  <div class="stats-grid">
+    <div class="stat-item"><div class="stat-num">99.9%</div><div class="stat-label">Uptime Guarantee</div></div>
+    <div class="stat-item"><div class="stat-num">500 Mbps</div><div class="stat-label">Max Speed</div></div>
+    <div class="stat-item"><div class="stat-num">2 Cities</div><div class="stat-label">Coverage Areas</div></div>
+    <div class="stat-item"><div class="stat-num">24/7</div><div class="stat-label">Support Hours</div></div>
+  </div>
+</div>
+
+<!-- SPEED MARQUEE SECTION -->
+<div class="speed-marquee-section">
+  <div class="speed-marquee-title"><i class="fas fa-tachometer-alt"></i> Choose Your Speed — Click Any to Select</div>
+  <div class="marquee-wrapper">
+    <div class="marquee-content" id="speedMarquee">
+      <span><i class="fas fa-bolt"></i> 40 Mbps</span>
+      <span><i class="fas fa-bolt"></i> 100 Mbps</span>
+      <span><i class="fas fa-bolt"></i> 200 Mbps</span>
+      <span><i class="fas fa-bolt"></i> 500 Mbps</span>
+      <!-- Duplicate for seamless loop -->
+      <span><i class="fas fa-bolt"></i> 40 Mbps</span>
+      <span><i class="fas fa-bolt"></i> 100 Mbps</span>
+      <span><i class="fas fa-bolt"></i> 200 Mbps</span>
+      <span><i class="fas fa-bolt"></i> 500 Mbps</span>
+    </div>
+  </div>
+</div>
+
+<!-- INTERNET PLANS SECTION -->
+<section id="plans" class="plans-section section">
+  <div class="section-header">
+    <h2><i class="fas fa-tags"></i> Choose Your Link</h2>
+    <p>Transparent pricing. No hidden fees. Pure performance.</p>
+  </div>
+  
+  <!-- Interactive Pincode Lookup container -->
+  <div style="text-align: center; margin-bottom: 25px;">
+    <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 12px;">Check if our high-speed fiber has reached your street (Tiruppur & Pollachi):</p>
+    <div class="pincode-container">
+      <input type="text" class="pincode-input" id="pincodeInput" placeholder="Enter your 6-digit pincode..." maxlength="6" />
+      <button class="btn-select" style="margin-top:0; width:auto; padding:12px 28px;" onclick="checkPincode()">Check availability</button>
+    </div>
+  </div>
+
+  <div class="speed-tabs" id="speedTabs"></div>
+  <div class="duration-tabs" id="durationTabs">
+    <div class="duration-tab active-duration" data-duration="monthly">Monthly</div>
+    <div class="duration-tab" data-duration="quarterly">3 Months</div>
+    <div class="duration-tab" data-duration="halfyearly">6 Months (+1mo free)</div>
+    <div class="duration-tab" data-duration="yearly">1 Year (+2mo free)</div>
+  </div>
+  
+  <div class="plan-cards" id="planCards"></div>
+
+  <!-- Plan Benefits summary -->
+  <div style="max-width: 900px; margin: 50px auto 0 auto; background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 20px; padding: 25px;">
+    <h3 style="margin-bottom: 15px; color: var(--primary); text-align: center;">Why Unilink Packages are Different:</h3>
+    <ul style="list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px;">
+      <li style="display:flex; align-items:center; gap:10px;"><i class="fas fa-exchange-alt" style="color:var(--primary)"></i> <strong>Symmetric Speeds:</strong> Same speed for upload & download.</li>
+      <li style="display:flex; align-items:center; gap:10px;"><i class="fas fa-infinity" style="color:var(--primary)"></i> <strong>No Hidden FUP:</strong> True unlimited bandwidth without drops.</li>
+      <li style="display:flex; align-items:center; gap:10px;"><i class="fas fa-gift" style="color:var(--primary)"></i> <strong>Free Installation:</strong> Ask our team about promotions!</li>
+    </ul>
+  </div>
+</section>
+
+<!-- OFFERS & DEALS SECTION -->
+<section id="offers" class="offers-section section">
+  <div class="section-header">
+    <h2><i class="fas fa-gift"></i> Offers and Deals</h2>
+    <p>Get the most value out of your next-gen fiber broadband connection.</p>
+  </div>
+  <div class="offers-grid">
+    <div class="offer-card">
+      <div class="offer-icon"><i class="fas fa-calendar-check"></i></div>
+      <h3>Annual Bonus Plan</h3>
+      <p>Subscribe for 10 months and get 2 additional months completely FREE. Includes free dual-band ONU router and zero installation charges.</p>
+    </div>
+    <div class="offer-card">
+      <div class="offer-icon"><i class="fas fa-users"></i></div>
+      <h3>Refer & Earn</h3>
+      <p>Recommend Unilink to a friend or neighbour in Tiruppur or Pollachi. Get ₹500 off on your next billing cycle once their line goes active!</p>
+    </div>
+    <div class="offer-card">
+      <div class="offer-icon"><i class="fas fa-tv"></i></div>
+      <h3>OTT Upgrade Deal</h3>
+      <p>Upgrade any plan above 100 Mbps to the Premium OTT bundle and receive instant access to Disney+ Hotstar, SonyLIV, Zee5, and more.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT US SECTION -->
+<section id="about" class="about-cinematic section">
+  <div class="cinematic-container">
+    <div class="about-intro">
+      <div class="cinematic-title"><i class="fas fa-link"></i> The Link That Powers Tiruppur & Pollachi.</div>
+      <div class="legacy-badge-center">
+        <div class="badge-year"><i class="far fa-calendar-alt"></i> Owned by Daan Communications Pvt Ltd</div>
+        <div class="badge-year"><i class="fas fa-rocket"></i> Transitioned from Daan Hypernet</div>
+        <div class="badge-year"><i class="fas fa-chart-line"></i> 99.9% Uptime SLA</div>
+      </div>
+    </div>
+    <div class="split-cards-grid">
+      <div class="card-row">
+        <div class="card-left">
+          <div class="cinematic-card-split">
+            <div class="card-icon">🎯</div>
+            <h3>Our Mission</h3>
+            <p>To be the single, most reliable link in your digital life. We aim to bridge the gap between global technology and local accessibility, ensuring Tiruppur stays ahead in an increasingly connected world.</p>
+            <div class="feature-compare">
+              <div class="compare-row"><span>Vision:</span><span class="highlight" style="color:var(--primary); font-weight:600;">One Link, Infinite Possibilities</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="card-right">
+          <div class="cinematic-card-split">
+            <div class="card-icon">📡</div>
+            <h3>Our Evolution</h3>
+            <p>For years, we built a foundation of trust as Daan Hypernet. As we expanded our horizons and upgraded our technology, we realized we needed a name that matched our ambition. Today, we are Unilink—the premier high-speed fiber network uniting the homes and businesses of Tiruppur and Pollachi.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card-row">
+        <div class="card-left">
+          <div class="cinematic-card-split">
+            <div class="card-icon">👥</div>
+            <h3>Who We Are</h3>
+            <p>Owned and operated by Daan Communications Private Limited, Unilink is more than an ISP. We are a team of local engineers and tech enthusiasts dedicated to bringing world-class connectivity to our home soil. From the industrial hubs of Tiruppur to the growing landscapes of Pollachi, we provide the backbone for the digital age.</p>
+          </div>
+        </div>
+        <div class="card-right">
+          <div class="cinematic-card-split">
+            <div class="card-icon">⚙️</div>
+            <h3>Why Unilink?</h3>
+            <p>We believe that in 2026, high-speed internet is a right, not a luxury. We’ve redesigned our network to ensure that whether you are a gamer, a remote professional, or a growing enterprise, your connection is:</p>
+            <div class="infra-grid">
+              <div class="infra-item"><strong>Seamless</strong><br>Transitioning devices without hiccups</div>
+              <div class="infra-item"><strong>Unstoppable</strong><br>99.9% uptime with FTTH lines</div>
+              <div class="infra-item"><strong>Local</strong><br>Same-neighborhood support teams</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-row">
+        <div class="card-left">
+          <div class="cinematic-card-split">
+            <div class="card-icon">🚀</div>
+            <h3>Double the Reach, Triple the Speed</h3>
+            <p>We’ve invested heavily in local infrastructure across both regions to ensure that "local" doesn't mean "slow." By choosing Unilink, you are choosing:</p>
+            <ul style="padding-left:20px; font-size:0.9rem; line-height:1.6; color:var(--text-muted); margin-top:10px;">
+              <li><strong>Localized Infrastructure:</strong> Dedicated fiber rings in both Tiruppur and Pollachi for maximum stability.</li>
+              <li><strong>Community-First Support:</strong> Our support teams are on the ground in your city, ensuring rapid response times that national providers can’t match.</li>
+              <li><strong>Scalable Solutions:</strong> Custom-tailored plans for the textile giants of Tiruppur, the traders of Pollachi, and the modern families in between.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card-right">
+          <div class="cinematic-card-split">
+            <div class="card-icon">🏢</div>
+            <h3>Regional Operations Comparison</h3>
+            <p>Dedicated resources customized for industrial and consumer demands across cities.</p>
+            <table class="comparison-table">
+              <tr>
+                <th>Feature</th>
+                <th>Tiruppur Operations</th>
+                <th>Pollachi Operations</th>
+              </tr>
+              <tr>
+                <td><strong>Focus</strong></td>
+                <td>Industrial & Residential Fiber</td>
+                <td>Home Broadband & SME Solutions</td>
+              </tr>
+              <tr>
+                <td><strong>Technology</strong></td>
+                <td>Ultra-Low Latency FTTH</td>
+                <td>Next-Gen Fiber-to-the-Home</td>
+              </tr>
+              <tr>
+                <td><strong>Support</strong></td>
+                <td>24/7 Local Helpdesk</td>
+                <td>On-Site Technical Team</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES SECTION -->
+<section id="services" class="services-detailed section">
+  <div class="section-header">
+    <h2><i class="fas fa-crown"></i> Connectivity Tailored to You</h2>
+    <p>From high-speed home entertainment to mission-critical business links.</p>
+  </div>
+  <div class="services-grid-detailed">
+    <div class="service-detailed-card">
+      <div>
+        <div class="service-icon-large"><i class="fas fa-home"></i></div>
+        <h3>1. Home Broadband</h3>
+        <p style="font-size:0.9rem; color:var(--text-muted); line-height:1.6;">Ultra-fast Fiber-to-the-Home (FTTH) designed for the modern household. Whether you are streaming in 4K, attending online classes, or dominating in online gaming, our home plans provide the stability you deserve.</p>
+      </div>
+      <ul class="feature-list">
+        <li><i class="fas fa-infinity"></i> Unlimited Data: No caps, no throttles</li>
+        <li><i class="fas fa-tachometer-alt"></i> Low Latency: Lag-free gaming</li>
+        <li><i class="fas fa-wifi"></i> Wi-Fi 6 Ready: Future-proof hardware</li>
+        <li><i class="fas fa-map-marked-alt"></i> Dual-City Support: Tiruppur & Pollachi</li>
+      </ul>
+    </div>
+    
+    <div class="service-detailed-card">
+      <div>
+        <div class="service-icon-large"><i class="fas fa-building"></i></div>
+        <h3>2. Corporate & Enterprise Links</h3>
+        <p style="font-size:0.9rem; color:var(--text-muted); line-height:1.6;">Scalable, high-bandwidth solutions for the engines of Tiruppur and Pollachi. We understand that for the textile industries and commercial sectors, downtime isn't just an inconvenience—it’s a loss.</p>
+      </div>
+      <ul class="feature-list">
+        <li><i class="fas fa-exchange-alt"></i> Leased Lines: Symmetric 99.9% SLA</li>
+        <li><i class="fas fa-server"></i> Static IP: Secure remote access & CCTV</li>
+        <li><i class="fas fa-network-wired"></i> Multi-Office Links: Tiruppur to Pollachi mesh</li>
+        <li><i class="fas fa-star"></i> Priority Support: Dedicated account teams</li>
+      </ul>
+    </div>
+    
+    <div class="service-detailed-card">
+      <div>
+        <div class="service-icon-large"><i class="fas fa-microchip"></i></div>
+        <h3>3. Smart Solutions & Value Add-ons</h3>
+        <p style="font-size:0.9rem; color:var(--text-muted); line-height:1.6;">Enhance your link with modern value-added systems that bring more convenience, safety, and cloud accessibility to your operations.</p>
+      </div>
+      <ul class="feature-list">
+        <li><i class="fas fa-tv"></i> OTT Bundles: 20+ streaming platforms</li>
+        <li><i class="fas fa-shield-alt"></i> Security First: Integrated firewall settings</li>
+        <li><i class="fas fa-hdd"></i> Cloud Storage: Access your files from anywhere</li>
+      </ul>
+      <table class="comparison-table" style="margin-top:15px;">
+        <tr>
+          <th>Feature</th>
+          <th>Home Link</th>
+          <th>Business Link</th>
+        </tr>
+        <tr>
+          <td>Best For</td>
+          <td>Streaming & Gaming</td>
+          <td>Offices & Industries</td>
+        </tr>
+        <tr>
+          <td>Speed Range</td>
+          <td>Up to 500 Mbps+</td>
+          <td>Custom Gig-Scale</td>
+        </tr>
+        <tr>
+          <td>Support</td>
+          <td>Standard Local</td>
+          <td>Priority 24/7 Support</td>
+        </tr>
+        <tr>
+          <td>IP Address</td>
+          <td>Dynamic</td>
+          <td>Static IP Available</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT US SECTION -->
+<section id="contact" class="contact-section section">
+  <div class="section-header">
+    <h2><i class="fas fa-address-card"></i> Contact Us</h2>
+    <p>Whether you’re in Tiruppur or Pollachi, we’re just a call or click away.</p>
+  </div>
+  <div class="contact-grid">
+    <div class="contact-card">
+      <div class="card-icon" style="font-size:2rem; color:var(--primary); margin-bottom:5px;"><i class="fas fa-phone-alt"></i></div>
+      <h3>1. Direct Contact</h3>
+      <div class="contact-detail">
+        <i class="fas fa-phone"></i>
+        <span><strong>Customer Support:</strong> 0421 6912005, 9787262228</span>
+      </div>
+      <div class="contact-detail">
+        <i class="fas fa-envelope"></i>
+        <span><strong>Technical Assistance:</strong> helpdesk@unilinkbroadband.com</span>
+      </div>
+      <div class="contact-detail">
+        <i class="fas fa-info-circle"></i>
+        <span><strong>Sales Inquiries:</strong> info@unilinkbroadband.com</span>
+      </div>
+      <div class="contact-detail">
+        <i class="fab fa-whatsapp" style="color:#25d366;"></i>
+        <span><strong>WhatsApp:</strong> 9787262228</span>
+      </div>
+    </div>
+    
+    <div class="contact-card">
+      <div class="card-icon" style="font-size:2rem; color:var(--primary); margin-bottom:5px;"><i class="fas fa-map-marker-alt"></i></div>
+      <h3>2. Our Locations</h3>
+      
+      <div class="location-group">
+        <h4>Tiruppur (Headquarters)</h4>
+        <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.5;">
+          Our central hub for network operations and corporate services.<br/>
+          <strong>Corporate Office:</strong> 302A, Periyar Colony, Tiruppur, Tamil Nadu – 641652.<br/>
+          <strong>Registered Office:</strong> 10/10, Lakshmi Nagar, Extn, II Street, Tiruppur, Tamil Nadu – 641602.
+        </p>
+      </div>
+      
+      <div class="location-group">
+        <h4>Pollachi Regional Office</h4>
+        <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.5;">
+          Serving our residential and commercial partners across the Pollachi region.<br/>
+          <strong>Franchisee:</strong> Airlink<br/>
+          <strong>Address:</strong> Amuthasurabhi Hotel AV COMPLEX, 205/84, Kovai Road, Palaghat, Pollachi, Tamil Nadu – 642001.<br/>
+          <strong>Local Support:</strong> 99940 55115
+        </p>
+      </div>
+    </div>
+    
+    <div class="contact-card" style="justify-content:center; align-items:center; text-align:center;">
+      <div class="card-icon" style="font-size:2.5rem; color:var(--primary);"><i class="fas fa-check-circle"></i></div>
+      <h3>Ready to get linked?</h3>
+      <p style="font-size:0.9rem; color:var(--text-muted);">Speak to our city-specific engineers for a feasibility check.</p>
+      <a class="btn-select" style="text-align:center; text-decoration:none; display:inline-block;" href="https://wa.me/919787262228" target="_blank">Enquire via WhatsApp →</a>
+    </div>
+  </div>
+</section>
+
+<!-- TERMS & CONDITIONS SECTION -->
+<section id="terms" class="legal-section section">
+  <div class="section-header">
+    <h2><i class="fas fa-gavel"></i> Terms & Conditions</h2>
+    <p>Last Updated: April 2026</p>
+  </div>
+  <div class="legal-grid">
+    <div class="legal-card">
+      <h3>Terms & Conditions</h3>
+      <p style="font-size:0.9rem; color:var(--text-muted); line-height:1.5;">Welcome to Unilink (a brand of Daan Communications Private Limited). By subscribing to our services in Tiruppur or Pollachi, you agree to the following terms:</p>
+      <ul>
+        <li><strong>Service Provision:</strong> We aim to provide a continuous high-speed connection. However, periodic maintenance or unforeseen technical local issues may cause temporary interruptions.</li>
+        <li><strong>Usage Policy:</strong> "Unlimited" plans are subject to our Fair Usage Policy (FUP) to ensure network integrity for all users. Commercial redistribution of residential plans is strictly prohibited.</li>
+        <li><strong>Equipment:</strong> Any ONT/Router provided by Unilink remains the property of Daan Communications Private Limited unless purchased upfront.</li>
+        <li><strong>Billing:</strong> Subscriptions are prepaid. To avoid disconnection, please ensure renewals are processed before the expiry date.</li>
+      </ul>
+    </div>
+    
+    <div class="legal-card">
+      <h3>Privacy Policy</h3>
+      <p style="font-size:0.9rem; color:var(--text-muted); line-height:1.5;">At Unilink, we value your trust and your data privacy.</p>
+      <ul>
+        <li><strong>Data Collection:</strong> We collect basic information (Name, Address, Aadhaar/ID for KYC) required by the Department of Telecommunications (DoT) to activate your link.</li>
+        <li><strong>Data Usage:</strong> Your contact details are used solely for billing alerts, service updates, and technical support.</li>
+        <li><strong>Third Parties:</strong> We do not sell your personal data. We only share information with government authorities when legally mandated under Indian Telecom Laws.</li>
+        <li><strong>Security:</strong> We implement industry-standard encryption to protect your account and payment information.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <!-- Loyal Customer Announcement banner -->
+  <div class="transition-announcement">
+    <h4>📢 Note to our loyal customers:</h4>
+    <p>Unilink is the new face of Daan Hypernet. While our look has changed, our presence in Tiruppur and Pollachi is stronger than ever. All existing subscriptions, support agreements, and service guarantees remain fully active under our new brand identity.</p>
+  </div>
+
+  <div class="social-links">
+    <a href="https://www.facebook.com" target="_blank" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.twitter.com" target="_blank" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.instagram.com" target="_blank" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+  </div>
+  <p class="copyright">© 2026 Unilink — A Daan Communications Enterprise</p>
+</footer>
+
+<div id="toastMsg" class="toast-msg"></div>
+
+<script src="app.js" defer></script>
+</body>
+</html>

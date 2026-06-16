@@ -1,0 +1,70 @@
+{
+  "40 Mbps": {
+    "name": "Starter Link",
+    "desc": "Social Media & Browsing",
+    "benefits": "Unlimited Data + 24/7 Support",
+    "base": {
+      "monthly": 399,
+      "quarterly": 1197,
+      "halfyearly": 2394,
+      "yearly": 4788
+    },
+    "ott": {
+      "monthly": 499,
+      "quarterly": 1497,
+      "halfyearly": 2994,
+      "yearly": 5988
+    }
+  },
+  "100 Mbps": {
+    "name": "Value Link",
+    "desc": "Families & Students",
+    "benefits": "Unlimited Data + HD Streaming",
+    "base": {
+      "monthly": 599,
+      "quarterly": 1797,
+      "halfyearly": 3594,
+      "yearly": 7188
+    },
+    "ott": {
+      "monthly": 699,
+      "quarterly": 2097,
+      "halfyearly": 4194,
+      "yearly": 8388
+    }
+  },
+  "200 Mbps": {
+    "name": "Turbo Link",
+    "desc": "Pro Gamers & Streamers",
+    "benefits": "Unlimited Data + 4K Streaming",
+    "base": {
+      "monthly": 899,
+      "quarterly": 2697,
+      "halfyearly": 5394,
+      "yearly": 10788
+    },
+    "ott": {
+      "monthly": 999,
+      "quarterly": 2997,
+      "halfyearly": 5994,
+      "yearly": 11988
+    }
+  },
+  "500 Mbps": {
+    "name": "Giga Link",
+    "desc": "Power Users & Large Homes",
+    "benefits": "Priority Routing + Ultra-Low Latency",
+    "base": {
+      "monthly": 1399,
+      "quarterly": 4197,
+      "halfyearly": 8394,
+      "yearly": 16788
+    },
+    "ott": {
+      "monthly": 1499,
+      "quarterly": 4497,
+      "halfyearly": 8994,
+      "yearly": 17988
+    }
+  }
+}
