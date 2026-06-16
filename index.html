@@ -6,7 +6,7 @@
   <title>Unilink — Premium Fiber Broadband | Cinematic Experience</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=1.2" />
 </head>
 <body>
 
@@ -144,67 +144,6 @@
   </div>
 </div>
 
-<!-- INTERNET PLANS SECTION -->
-<section id="plans" class="plans-section section">
-  <div class="section-header">
-    <h2><i class="fas fa-tags"></i> Choose Your Link</h2>
-    <p>Transparent pricing. No hidden fees. Pure performance.</p>
-  </div>
-  
-  <!-- Interactive Pincode Lookup container -->
-  <div style="text-align: center; margin-bottom: 25px;">
-    <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 12px;">Check if our high-speed fiber has reached your street (Tiruppur & Pollachi):</p>
-    <div class="pincode-container">
-      <input type="text" class="pincode-input" id="pincodeInput" placeholder="Enter your 6-digit pincode..." maxlength="6" />
-      <button class="btn-select" style="margin-top:0; width:auto; padding:12px 28px;" onclick="checkPincode()">Check availability</button>
-    </div>
-  </div>
-
-  <div class="speed-tabs" id="speedTabs"></div>
-  <div class="duration-tabs" id="durationTabs">
-    <div class="duration-tab active-duration" data-duration="monthly">Monthly</div>
-    <div class="duration-tab" data-duration="quarterly">3 Months</div>
-    <div class="duration-tab" data-duration="halfyearly">6 Months (+1mo free)</div>
-    <div class="duration-tab" data-duration="yearly">1 Year (+2mo free)</div>
-  </div>
-  
-  <div class="plan-cards" id="planCards"></div>
-
-  <!-- Plan Benefits summary -->
-  <div style="max-width: 900px; margin: 50px auto 0 auto; background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 20px; padding: 25px;">
-    <h3 style="margin-bottom: 15px; color: var(--primary); text-align: center;">Why Unilink Packages are Different:</h3>
-    <ul style="list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px;">
-      <li style="display:flex; align-items:center; gap:10px;"><i class="fas fa-exchange-alt" style="color:var(--primary)"></i> <strong>Symmetric Speeds:</strong> Same speed for upload & download.</li>
-      <li style="display:flex; align-items:center; gap:10px;"><i class="fas fa-infinity" style="color:var(--primary)"></i> <strong>No Hidden FUP:</strong> True unlimited bandwidth without drops.</li>
-      <li style="display:flex; align-items:center; gap:10px;"><i class="fas fa-gift" style="color:var(--primary)"></i> <strong>Free Installation:</strong> Ask our team about promotions!</li>
-    </ul>
-  </div>
-</section>
-
-<!-- OFFERS & DEALS SECTION -->
-<section id="offers" class="offers-section section">
-  <div class="section-header">
-    <h2><i class="fas fa-gift"></i> Offers and Deals</h2>
-    <p>Get the most value out of your next-gen fiber broadband connection.</p>
-  </div>
-  <div class="offers-grid">
-    <div class="offer-card">
-      <div class="offer-icon"><i class="fas fa-calendar-check"></i></div>
-      <h3>Annual Bonus Plan</h3>
-      <p>Subscribe for 10 months and get 2 additional months completely FREE. Includes free dual-band ONU router and zero installation charges.</p>
-    </div>
-    <div class="offer-card">
-      <div class="offer-icon"><i class="fas fa-users"></i></div>
-      <h3>Refer & Earn</h3>
-      <p>Recommend Unilink to a friend or neighbour in Tiruppur or Pollachi. Get ₹500 off on your next billing cycle once their line goes active!</p>
-    </div>
-    <div class="offer-card">
-      <div class="offer-icon"><i class="fas fa-tv"></i></div>
-      <h3>OTT Upgrade Deal</h3>
-      <p>Upgrade any plan above 100 Mbps to the Premium OTT bundle and receive instant access to Disney+ Hotstar, SonyLIV, Zee5, and more.</p>
-    </div>
-  </div>
-</section>
 
 <!-- ABOUT US SECTION -->
 <section id="about" class="about-cinematic section">
@@ -304,6 +243,85 @@
     </div>
   </div>
 </section>
+
+<!-- INTERNET PLANS SECTION -->
+<section id="plans" class="plans-section section">
+  <div class="section-header">
+    <h2><i class="fas fa-tags"></i> Choose Your Link</h2>
+    <p>Transparent pricing. No hidden fees. Pure performance.</p>
+  </div>
+  
+  <!-- Location Selection Toggle -->
+  <div style="text-align: center; margin-bottom: 25px;">
+    <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 12px;">Check if our high-speed fiber has reached your street (Tiruppur & Pollachi):</p>
+    <div class="location-toggle-wrapper">
+      <div class="location-toggle-capsule">
+        <button class="location-btn active" id="locBtnTiruppur" onclick="selectLocation('Tiruppur')">Tiruppur</button>
+        <button class="location-btn" id="locBtnPollachi" onclick="selectLocation('Pollachi')">Pollachi</button>
+        <div class="location-slider"></div>
+      </div>
+      <div class="location-coverage-info" id="locationCoverageInfo">
+        <i class="fas fa-check-circle"></i> Unilink High-Speed Fiber is fully active in <strong>Tiruppur</strong>!
+      </div>
+    </div>
+  </div>
+
+  <!-- Speed Selection Buttons -->
+  <div class="speed-tabs" id="speedTabs">
+    <button class="speed-tab active-tab" id="speedTab40" onclick="filterBySpeed('40 Mbps')">40 Mbps</button>
+    <button class="speed-tab" id="speedTab100" onclick="filterBySpeed('100 Mbps')">100 Mbps</button>
+    <button class="speed-tab" id="speedTab200" onclick="filterBySpeed('200 Mbps')">200 Mbps</button>
+    <button class="speed-tab" id="speedTab500" onclick="filterBySpeed('500 Mbps')">500 Mbps</button>
+  </div>
+
+  <!-- Plans Segmented Slider -->
+  <div class="plans-slider-container">
+    <div class="plan-cards" id="planCards"></div>
+  </div>
+
+  <!-- Plans Slider Controls -->
+  <div class="plans-slider-controls">
+    <button class="unified-nav-btn" id="plansPrevBtn"><i class="fas fa-chevron-left"></i></button>
+    <div class="unified-dots" id="plansDotsContainer"></div>
+    <button class="unified-nav-btn" id="plansNextBtn"><i class="fas fa-chevron-right"></i></button>
+  </div>
+
+  <!-- Plan Benefits summary -->
+  <div style="max-width: 900px; margin: 50px auto 0 auto; background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 20px; padding: 25px;">
+    <h3 style="margin-bottom: 15px; color: var(--primary); text-align: center;">Why Unilink Packages are Different:</h3>
+    <ul style="list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px;">
+      <li style="display:flex; align-items:center; gap:10px;"><i class="fas fa-exchange-alt" style="color:var(--primary)"></i> <strong>Symmetric Speeds:</strong> Same speed for upload & download.</li>
+      <li style="display:flex; align-items:center; gap:10px;"><i class="fas fa-infinity" style="color:var(--primary)"></i> <strong>No Hidden FUP:</strong> True unlimited bandwidth without drops.</li>
+      <li style="display:flex; align-items:center; gap:10px;"><i class="fas fa-gift" style="color:var(--primary)"></i> <strong>Free Installation:</strong> Ask our team about promotions!</li>
+    </ul>
+  </div>
+</section>
+
+<!-- OFFERS & DEALS SECTION -->
+<section id="offers" class="offers-section section">
+  <div class="section-header">
+    <h2><i class="fas fa-gift"></i> Offers and Deals</h2>
+    <p>Get the most value out of your next-gen fiber broadband connection.</p>
+  </div>
+  <div class="offers-grid">
+    <div class="offer-card">
+      <div class="offer-icon"><i class="fas fa-calendar-check"></i></div>
+      <h3>Annual Bonus Plan</h3>
+      <p>Subscribe for 10 months and get 2 additional months completely FREE. Includes free dual-band ONU router and zero installation charges.</p>
+    </div>
+    <div class="offer-card">
+      <div class="offer-icon"><i class="fas fa-users"></i></div>
+      <h3>Refer & Earn</h3>
+      <p>Recommend Unilink to a friend or neighbour in Tiruppur or Pollachi. Get ₹500 off on your next billing cycle once their line goes active!</p>
+    </div>
+    <div class="offer-card">
+      <div class="offer-icon"><i class="fas fa-tv"></i></div>
+      <h3>OTT Upgrade Deal</h3>
+      <p>Upgrade any plan above 100 Mbps to the Premium OTT bundle and receive instant access to Disney+ Hotstar, SonyLIV, Zee5, and more.</p>
+    </div>
+  </div>
+</section>
+
 
 <!-- SERVICES SECTION -->
 <section id="services" class="services-detailed section">
@@ -490,8 +508,34 @@
   <p class="copyright">© 2026 Unilink — A Daan Communications Enterprise</p>
 </footer>
 
+<!-- Enquiry Modal -->
+<div id="enquiryModal" class="modal-overlay">
+  <div class="modal-card">
+    <button class="modal-close-btn" id="closeModalBtn" aria-label="Close Dialog">&times;</button>
+    <div class="modal-header">
+      <h3>Plan Inquiry</h3>
+      <p id="modalPlanName">Starter Link Essential</p>
+    </div>
+    <form id="enquiryForm" onsubmit="submitEnquiryForm(event)">
+      <div class="form-group">
+        <label for="usrName">Full Name</label>
+        <input type="text" id="usrName" placeholder="Enter your full name" required />
+      </div>
+      <div class="form-group">
+        <label for="usrMobile">Mobile Number</label>
+        <input type="tel" id="usrMobile" placeholder="10-digit mobile number" pattern="[0-9]{10}" required />
+      </div>
+      <div class="form-group">
+        <label for="usrAddress">Address</label>
+        <textarea id="usrAddress" rows="3" placeholder="Enter your full installation address" required></textarea>
+      </div>
+      <button type="submit" class="btn-select" style="margin-top: 15px;">Send Enquiry on WhatsApp →</button>
+    </form>
+  </div>
+</div>
+
 <div id="toastMsg" class="toast-msg"></div>
 
-<script src="app.js" defer></script>
+<script src="app.js?v=1.2" defer></script>
 </body>
 </html>
