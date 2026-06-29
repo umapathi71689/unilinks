@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>About Us — Unilink Broadband</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css?v=1.2" />
+</head>
+
+<body>
+
+  <!-- Scroll Progress -->
+  <div id="scroll-progress"></div>
+
+  <!-- Custom Cursor -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- Background Elements -->
+  <!-- Background Animation (SVG injected dynamically via app.js) -->
+  <div class="video-overlay"></div>
+  <div class="orb-container">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <nav id="main-nav">
+    <img class="nav-logo" src="logo-light.png" alt="Logo" onclick="window.location.href='index.html'" style="height: 35px;" />
+    <div class="nav-divider"></div>
+
+    <div class="nav-controls">
+      <button class="mobile-theme-btn" id="mobileThemeToggleBtn" aria-label="Toggle Theme">
+        <i class="fas fa-moon"></i>
+      </button>
+      <button class="menu-toggle" id="menuToggleBtn" aria-label="Toggle Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+    <div class="nav-links-wrapper" id="navLinksWrapper">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link active">About Us</a>
+      <a href="plans.html" class="nav-link">Internet Plans</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="contact.html" class="nav-link">Contact Us</a>
+      <a href="terms.html" class="nav-link">Terms & Conditions</a>
+      <a href="https://myaccount.daancommunications.com/customer_portal" target="_blank" class="nav-btn"
+        id="loginBtn"><i class="fas fa-key"></i> Login</a>
+    </div>
+  </nav>
+
+  <!-- Floating Social & Action Sidebar -->
+  <div class="social-floating-dock">
+    <button class="dock-item dock-theme" id="themeToggleBtn" aria-label="Toggle Theme"><i
+        class="fas fa-moon"></i></button>
+    <a href="https://wa.me/919787262228" target="_blank" class="dock-item dock-whatsapp"
+      aria-label="WhatsApp Enquiry" data-social="whatsapp"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://www.instagram.com" target="_blank" class="dock-item dock-instagram" aria-label="Instagram" data-social="instagram"><i
+        class="fab fa-instagram"></i></a>
+    <a href="https://www.facebook.com" target="_blank" class="dock-item dock-facebook" aria-label="Facebook" data-social="facebook"><i
+        class="fab fa-facebook-f"></i></a>
+    <button class="dock-item dock-download" aria-label="Download App"><i class="fas fa-download"></i></button>
+  </div>
+
+  <!-- ABOUT US HERO -->
+  <section class="about-hero">
+    <div class="about-hero-container">
+      <span class="about-badge"><i class="fas fa-link"></i> Tiruppur & Pollachi FTTH</span>
+      <h1 class="about-title-text">Connecting Your World with Next-Gen Fiber</h1>
+      <p class="about-subtitle">Formerly known as Daan Hypernet, Unilink is Tiruppur's premier high-speed broadband
+        network powered by Daan Communications Private Limited.</p>
+    </div>
+  </section>
+
+  <!-- STATS STRIP SECTION -->
+  <section class="about-stats-section">
+    <div class="about-stats-grid">
+      <div class="about-stat-card">
+        <div class="stat-icon"><i class="fas fa-building"></i></div>
+        <div class="stat-info">
+          <h3>Daan Communications</h3>
+          <p>Parent Enterprise</p>
+        </div>
+      </div>
+      <div class="about-stat-card">
+        <div class="stat-icon"><i class="fas fa-rocket"></i></div>
+        <div class="stat-info">
+          <h3>Daan Hypernet</h3>
+          <p>Legacy Network Brand</p>
+        </div>
+      </div>
+      <div class="about-stat-card">
+        <div class="stat-icon"><i class="fas fa-chart-line"></i></div>
+        <div class="stat-info">
+          <h3>99.9% Uptime</h3>
+          <p>SLA Fiber Guarantee</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CORE PILLARS SECTION -->
+  <section class="about-pillars-section">
+    <div class="pillars-container">
+      <div class="pillars-grid">
+        <!-- Card 1: Our Mission -->
+        <div class="pillar-card">
+          <div class="pillar-icon"><i class="fas fa-bullseye"></i></div>
+          <h3>Our Mission</h3>
+          <p>To be the single, most reliable link in your digital life. We aim to bridge the gap between global
+            technology and local accessibility, ensuring Tiruppur stays ahead in an increasingly connected world.</p>
+          <div class="pillar-highlight">
+            <span class="highlight-label">Vision:</span>
+            <span class="highlight-val">One Link, Infinite Possibilities</span>
+          </div>
+        </div>
+
+        <!-- Card 2: Our Evolution -->
+        <div class="pillar-card">
+          <div class="pillar-icon"><i class="fas fa-history"></i></div>
+          <h3>Our Evolution</h3>
+          <p>For years, we built a foundation of trust as Daan Hypernet. As we expanded our horizons and upgraded our
+            technology, we realized we needed a name that matched our ambition. Today, we are Unilink—the premier
+            high-speed fiber network uniting the homes and businesses of Tiruppur and Pollachi.</p>
+        </div>
+
+        <!-- Card 3: Who We Are -->
+        <div class="pillar-card">
+          <div class="pillar-icon"><i class="fas fa-users"></i></div>
+          <h3>Who We Are</h3>
+          <p>Owned and operated by Daan Communications Private Limited, Unilink is more than an ISP. We are a team of
+            local engineers and tech enthusiasts dedicated to bringing world-class connectivity to our home soil. From
+            the industrial hubs of Tiruppur to the growing landscapes of Pollachi, we provide the backbone for the
+            digital age.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES & OPERATIONS GRID -->
+  <section class="about-operations-section">
+    <div class="operations-container">
+      <div class="operations-grid">
+        <!-- Card Left: Why Unilink -->
+        <div class="ops-card ops-left">
+          <div class="ops-icon"><i class="fas fa-check-double"></i></div>
+          <h3>Why Unilink?</h3>
+          <p>We believe that high-speed internet is a right, not a luxury. We’ve redesigned our network to ensure that
+            whether you are a gamer, a remote professional, or a growing enterprise, your connection is:</p>
+          <div class="ops-features-list">
+            <div class="ops-feature-item">
+              <i class="fas fa-sliders-h"></i>
+              <div>
+                <h4>Seamless Connectivity</h4>
+                <p>Transitioning devices without hiccups.</p>
+              </div>
+            </div>
+            <div class="ops-feature-item">
+              <i class="fas fa-shield-alt"></i>
+              <div>
+                <h4>Unstoppable Performance</h4>
+                <p>99.9% uptime with FTTH lines.</p>
+              </div>
+            </div>
+            <div class="ops-feature-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>Local Neighbourhood Support</h4>
+                <p>Same-neighborhood support teams on the ground.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card Right: Regional Comparison -->
+        <div class="ops-card ops-right">
+          <div class="ops-icon"><i class="fas fa-network-wired"></i></div>
+          <h3>Regional Operations</h3>
+          <p>We've invested heavily in local infrastructure across both regions to ensure that "local" doesn't mean
+            "slow." We run dedicated resources customized for industrial and consumer demands.</p>
+
+          <div class="table-responsive">
+            <table class="ops-comparison-table">
+              <thead>
+                <tr>
+                  <th>Feature</th>
+                  <th>Tiruppur Operations</th>
+                  <th>Pollachi Operations</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Focus</strong></td>
+                  <td>Industrial & Residential Fiber</td>
+                  <td>Home Broadband & SME Solutions</td>
+                </tr>
+                <tr>
+                  <td><strong>Technology</strong></td>
+                  <td>Ultra-Low Latency FTTH</td>
+                  <td>Next-Gen Fiber-to-the-Home</td>
+                </tr>
+                <tr>
+                  <td><strong>Support</strong></td>
+                  <td>24/7 Local Helpdesk</td>
+                  <td>On-Site Technical Team</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p class="copyright">© 2026 Unilink — A Daan Communications Enterprise</p>
+  </footer>
+
+  <script src="app.js?v=1.2" defer></script>
+</body>
+
+</html>

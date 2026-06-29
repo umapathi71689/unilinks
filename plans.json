@@ -1,0 +1,258 @@
+{
+  "30 Mbps": {
+    "name": "Starter Link",
+    "desc": "Social Media & Browsing",
+    "benefits": "Unlimited Data + 24/7 Support",
+    "discounts": {
+      "monthly": 0,
+      "quarterly": 0,
+      "halfyearly": 0,
+      "yearly": 0
+    },
+    "base": {
+      "locations": ["Pollachi"],
+      "monthly": 299,
+      "quarterly": 897,
+      "halfyearly": 1794,
+      "yearly": 3588
+    },
+    "ott": {
+      "locations": [],
+      "monthly": null,
+      "quarterly": null,
+      "halfyearly": null,
+      "yearly": null
+    },
+    "tv_ott": {
+      "locations": [],
+      "monthly": null,
+      "quarterly": null,
+      "halfyearly": null,
+      "yearly": null
+    }
+  },
+  "40 Mbps": {
+    "name": "Starter Link",
+    "desc": "Social Media & Browsing",
+    "benefits": "Unlimited Data + 24/7 Support",
+    "discounts": {
+      "monthly": 0,
+      "quarterly": 0,
+      "halfyearly": 0,
+      "yearly": 0
+    },
+    "base": {
+      "locations": ["Tiruppur"],
+      "monthly": 399,
+      "quarterly": 1197,
+      "halfyearly": 2394,
+      "yearly": 4788
+    },
+    "ott": {
+      "locations": ["Tiruppur"],
+      "monthly": 469,
+      "quarterly": 1407,
+      "halfyearly": 2814,
+      "yearly": 5628
+    },
+    "tv_ott": {
+      "locations": ["Tiruppur"],
+      "monthly": 599,
+      "quarterly": null,
+      "halfyearly": null,
+      "yearly": null
+    }
+  },
+  "50 Mbps": {
+    "name": "Starter Plus Link",
+    "desc": "HD Streaming & Work from Home",
+    "benefits": "Unlimited Data + 24/7 Support",
+    "discounts": {
+      "monthly": 0,
+      "quarterly": 0,
+      "halfyearly": 0,
+      "yearly": 0
+    },
+    "base": {
+      "locations": ["Pollachi", "Tiruppur"],
+      "monthly": 499,
+      "quarterly": 1497,
+      "halfyearly": 2994,
+      "yearly": 5988
+    },
+    "ott": {
+      "locations": ["Tiruppur"],
+      "monthly": 569,
+      "quarterly": 1707,
+      "halfyearly": 3414,
+      "yearly": 6828
+    },
+    "tv_ott": {
+      "locations": ["Tiruppur"],
+      "monthly": 799,
+      "quarterly": null,
+      "halfyearly": null,
+      "yearly": null
+    }
+  },
+  "75 Mbps": {
+    "name": "Value Link",
+    "desc": "Families & Students",
+    "benefits": "Unlimited Data + HD Streaming",
+    "discounts": {
+      "monthly": 0,
+      "quarterly": 0,
+      "halfyearly": 0,
+      "yearly": 0
+    },
+    "base": {
+      "locations": ["Pollachi", "Tiruppur"],
+      "monthly": 599,
+      "quarterly": 1797,
+      "halfyearly": 3594,
+      "yearly": 7188
+    },
+    "ott": {
+      "locations": ["Tiruppur"],
+      "monthly": 669,
+      "quarterly": 2007,
+      "halfyearly": 4014,
+      "yearly": 8028
+    },
+    "tv_ott": {
+      "locations": [],
+      "monthly": null,
+      "quarterly": null,
+      "halfyearly": null,
+      "yearly": null
+    }
+  },
+  "100 Mbps": {
+    "name": "Value Link",
+    "desc": "Families & Students",
+    "benefits": "Unlimited Data + HD Streaming",
+    "discounts": {
+      "monthly": 0,
+      "quarterly": 0,
+      "halfyearly": 0,
+      "yearly": 0
+    },
+    "base": {
+      "locations": ["Pollachi", "Tiruppur"],
+      "monthly": 799,
+      "quarterly": 2397,
+      "halfyearly": 4794,
+      "yearly": 9588
+    },
+    "ott": {
+      "locations": ["Tiruppur"],
+      "monthly": 869,
+      "quarterly": 2607,
+      "halfyearly": 5214,
+      "yearly": 10428
+    },
+    "tv_ott": {
+      "locations": ["Tiruppur"],
+      "monthly": 999,
+      "quarterly": null,
+      "halfyearly": null,
+      "yearly": null
+    }
+  },
+  "125 Mbps": {
+    "name": "Turbo Link",
+    "desc": "Pro Gamers & Streamers",
+    "benefits": "Unlimited Data + 4K Streaming",
+    "discounts": {
+      "monthly": 0,
+      "quarterly": 0,
+      "halfyearly": 0,
+      "yearly": 0
+    },
+    "base": {
+      "locations": ["Pollachi"],
+      "monthly": 999,
+      "quarterly": 2997,
+      "halfyearly": 5994,
+      "yearly": 11988
+    },
+    "ott": {
+      "locations": [],
+      "monthly": null,
+      "quarterly": null,
+      "halfyearly": null,
+      "yearly": null
+    },
+    "tv_ott": {
+      "locations": [],
+      "monthly": null,
+      "quarterly": null,
+      "halfyearly": null,
+      "yearly": null
+    }
+  },
+  "150 Mbps": {
+    "name": "Turbo Link",
+    "desc": "Pro Gamers & Streamers",
+    "benefits": "Unlimited Data + 4K Streaming",
+    "discounts": {
+      "monthly": 0,
+      "quarterly": 0,
+      "halfyearly": 0,
+      "yearly": 0
+    },
+    "base": {
+      "locations": ["Pollachi", "Tiruppur"],
+      "monthly": 1099,
+      "quarterly": 3297,
+      "halfyearly": 6594,
+      "yearly": 13188
+    },
+    "ott": {
+      "locations": ["Tiruppur"],
+      "monthly": 1169,
+      "quarterly": 3507,
+      "halfyearly": 7014,
+      "yearly": 14028
+    },
+    "tv_ott": {
+      "locations": [],
+      "monthly": null,
+      "quarterly": null,
+      "halfyearly": null,
+      "yearly": null
+    }
+  },
+  "200 Mbps": {
+    "name": "Turbo Link",
+    "desc": "Pro Gamers & Streamers",
+    "benefits": "Unlimited Data + 4K Streaming",
+    "discounts": {
+      "monthly": 0,
+      "quarterly": 0,
+      "halfyearly": 0,
+      "yearly": 0
+    },
+    "base": {
+      "locations": ["Tiruppur"],
+      "monthly": 1299,
+      "quarterly": 3897,
+      "halfyearly": 7794,
+      "yearly": 15588
+    },
+    "ott": {
+      "locations": ["Tiruppur"],
+      "monthly": 1369,
+      "quarterly": 4107,
+      "halfyearly": 8214,
+      "yearly": 16428
+    },
+    "tv_ott": {
+      "locations": [],
+      "monthly": null,
+      "quarterly": null,
+      "halfyearly": null,
+      "yearly": null
+    }
+  }
+}

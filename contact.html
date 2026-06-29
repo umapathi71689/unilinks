@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Contact Us — Unilink Broadband</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css?v=1.2" />
+</head>
+
+<body>
+
+  <!-- Scroll Progress -->
+  <div id="scroll-progress"></div>
+
+  <!-- Custom Cursor -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- Background Elements -->
+  <!-- Background Animation (SVG injected dynamically via app.js) -->
+  <div class="video-overlay"></div>
+  <div class="orb-container">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <nav id="main-nav">
+    <img class="nav-logo" src="logo-light.png" alt="Logo" onclick="window.location.href='index.html'" style="height: 35px;" />
+    <div class="nav-divider"></div>
+
+    <div class="nav-controls">
+      <button class="mobile-theme-btn" id="mobileThemeToggleBtn" aria-label="Toggle Theme">
+        <i class="fas fa-moon"></i>
+      </button>
+      <button class="menu-toggle" id="menuToggleBtn" aria-label="Toggle Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+    <div class="nav-links-wrapper" id="navLinksWrapper">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About Us</a>
+      <a href="plans.html" class="nav-link">Internet Plans</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="contact.html" class="nav-link active">Contact Us</a>
+      <a href="terms.html" class="nav-link">Terms & Conditions</a>
+      <a href="https://myaccount.daancommunications.com/customer_portal" target="_blank" class="nav-btn"
+        id="loginBtn"><i class="fas fa-key"></i> Login</a>
+    </div>
+  </nav>
+
+  <!-- Floating Social & Action Sidebar -->
+  <div class="social-floating-dock">
+    <button class="dock-item dock-theme" id="themeToggleBtn" aria-label="Toggle Theme"><i
+        class="fas fa-moon"></i></button>
+    <a href="https://wa.me/919787262228" target="_blank" class="dock-item dock-whatsapp"
+      aria-label="WhatsApp Enquiry" data-social="whatsapp"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://www.instagram.com" target="_blank" class="dock-item dock-instagram" aria-label="Instagram"
+      data-social="instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.facebook.com" target="_blank" class="dock-item dock-facebook" aria-label="Facebook"
+      data-social="facebook"><i class="fab fa-facebook-f"></i></a>
+    <button class="dock-item dock-download" aria-label="Download App"><i class="fas fa-download"></i></button>
+  </div>
+
+  <!-- CONTACT US SECTION -->
+  <section id="contact" class="contact-section-container">
+    <div class="section-header">
+      <h2><i class="fas fa-address-card"></i> Contact Us</h2>
+      <p class="contact-subtitle-text">Whether you’re in Tiruppur or Pollachi, we’re just a call or click away.</p>
+    </div>
+
+    <div class="contact-grid-balanced">
+      <!-- Card 1: Direct Contact -->
+      <div class="contact-info-card animated">
+        <div class="card-icon-frame"><i class="fas fa-phone-alt"></i></div>
+        <h3>Direct Contact</h3>
+        <p class="contact-card-desc">Reach our technical and customer support desks directly for assistance.</p>
+
+        <div class="contact-item-row">
+          <i class="fas fa-phone"></i>
+          <div>
+            <h4>Customer Support</h4>
+            <p>0421 6912005, <span class="support-whatsapp-number">9787262228</span></p>
+          </div>
+        </div>
+        <div class="contact-item-row">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <h4>Technical Assistance</h4>
+            <p>helpdesk@unilinkbroadband.com</p>
+          </div>
+        </div>
+        <div class="contact-item-row">
+          <i class="fas fa-info-circle"></i>
+          <div>
+            <h4>Sales Inquiries</h4>
+            <p>info@unilinkbroadband.com</p>
+          </div>
+        </div>
+        <div class="contact-item-row">
+          <i class="fab fa-whatsapp"></i>
+          <div>
+            <h4>WhatsApp Direct</h4>
+            <p><a href="https://wa.me/919787262228" target="_blank" class="contact-link-number" data-social="whatsapp">9787262228</a></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: Locations -->
+      <div class="contact-info-card animated">
+        <div class="card-icon-frame"><i class="fas fa-map-marker-alt"></i></div>
+        <h3>Our Locations</h3>
+        <p class="contact-card-desc">Visit our offices for corporate services, billing queries, or local support.</p>
+
+        <div class="office-block">
+          <h4>Tiruppur (Headquarters) — Corporate Office</h4>
+          <p class="office-address">
+            302A, Periyar Colony, Tiruppur, Tamil Nadu – 641652.
+          </p>
+        </div>
+
+        <div class="office-block">
+          <h4>Tiruppur — Registered Office</h4>
+          <p class="office-address">
+            10/10, Lakshmi Nagar, Extn, II Street, Tiruppur, Tamil Nadu – 641602.
+          </p>
+        </div>
+
+        <div class="office-block">
+          <h4>Pollachi Regional Office</h4>
+          <p class="office-address">
+            Franchisee Partner: Airlink<br />
+            Address: Amuthasurabhi Hotel AV Complex, 205/84, Kovai Road, Palaghat, Pollachi, Tamil Nadu – 642001.<br />
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Full-Width CTA Banner at the bottom -->
+    <div class="contact-cta-banner animated">
+      <div class="cta-icon-large"><i class="fas fa-check-circle"></i></div>
+      <h3>Ready to get linked?</h3>
+      <p>Speak directly to our local network engineers for a feasibility check in your street.</p>
+      <a class="btn-select contact-cta-btn" href="https://wa.me/919787262228" target="_blank" data-social="whatsapp">Enquire via WhatsApp →</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p class="copyright">© 2026 Unilink — A Daan Communications Enterprise</p>
+  </footer>
+
+  <script src="app.js?v=1.2" defer></script>
+</body>
+
+</html>
