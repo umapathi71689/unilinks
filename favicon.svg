@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Unilink favicon">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0ea5a0"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#g)"/>
+  <path d="M18 18h10.5c8.3 0 15 6.7 15 15V48H33v-15c0-2.8-2.2-5-5-5H18z" fill="#fff"/>
+  <path d="M18 18h10.5c8.3 0 15 6.7 15 15V48H33v-15c0-2.8-2.2-5-5-5H18z" fill="#fff" opacity="0.95"/>
+</svg>
