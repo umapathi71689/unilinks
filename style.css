@@ -622,19 +622,22 @@ nav img.nav-logo:hover {
 
 .hero-fullscreen-showcase {
   width: 100%;
+  padding: 0 clamp(16px, 3vw, 40px);
+  box-sizing: border-box;
 }
 
 .hero-fullscreen-frame {
   min-height: calc(100vh - 90px);
-  border-radius: 0;
+  border-radius: 24px;
   box-shadow: none;
   background: var(--bg-primary);
+  overflow: hidden;
 }
 
 .hero-fullscreen-frame .image-slide-track {
   aspect-ratio: auto;
   min-height: calc(100vh - 90px);
-  border-radius: 0;
+  border-radius: 24px;
 }
 
 .hero-fullscreen-frame .image-slide {
@@ -3969,12 +3972,18 @@ body.dark-theme .hero-slide-ott {
 }
 
 @media (max-width: 550px) {
+  .hero-fullscreen-showcase {
+    padding: 0 10px;
+  }
+
   .hero-fullscreen-frame {
     max-height: 55vh;
+    border-radius: 14px;
   }
 
   .hero-fullscreen-frame .image-slide-track {
     aspect-ratio: 4 / 3;
+    border-radius: 14px;
   }
 
   .unified-nav-btn {
